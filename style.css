@@ -1,0 +1,439 @@
+/* Replace your entire style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#ff3c38;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#ff3c38;
+}
+
+.join-btn{
+    text-decoration:none;
+    color:white;
+    background:#ff3c38;
+    padding:12px 25px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.join-btn:hover{
+    background:#d62828;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px 8%;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:65px;
+    line-height:1.2;
+}
+
+.hero-content span{
+    color:#ff3c38;
+}
+
+.hero-content p{
+    margin:25px 0;
+    color:#bbb;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn,
+.btn-outline{
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:8px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn{
+    background:#ff3c38;
+    color:white;
+}
+
+.btn:hover{
+    background:#d62828;
+}
+
+.btn-outline{
+    border:2px solid #ff3c38;
+    color:#ff3c38;
+}
+
+.btn-outline:hover{
+    background:#ff3c38;
+    color:white;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:20px;
+}
+
+@media(max-width:900px){
+
+.navbar{
+    flex-direction:column;
+    gap:20px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:45px;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+}
+/* Paste at the END of style.css */
+
+.programs{
+    padding:90px 8%;
+    background:#181818;
+}
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+    color:#fff;
+}
+
+.program-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.program-card{
+    background:#222;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:15px;
+    transition:.3s;
+    border:2px solid transparent;
+}
+
+.program-card:hover{
+    transform:translateY(-10px);
+    border-color:#ff3c38;
+}
+
+.program-card i{
+    font-size:50px;
+    color:#ff3c38;
+    margin-bottom:20px;
+}
+
+.program-card h3{
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.program-card p{
+    color:#bdbdbd;
+    line-height:1.7;
+}
+/* Paste at the END of style.css */
+
+.trainers{
+    padding:90px 8%;
+    background:#101010;
+}
+
+.trainer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.trainer-card{
+    background:#1d1d1d;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    transition:.3s;
+}
+
+.trainer-card:hover{
+    transform:translateY(-10px);
+}
+
+.trainer-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.trainer-card h3{
+    margin-top:20px;
+    font-size:26px;
+}
+
+.trainer-card p{
+    color:#ff3c38;
+    margin:12px 0 25px;
+    font-size:18px;
+}
+/* Paste at the END of style.css */
+
+.pricing{
+    padding:90px 8%;
+    background:#181818;
+}
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.price-card{
+    background:#222;
+    padding:40px 30px;
+    border-radius:18px;
+    text-align:center;
+    position:relative;
+    transition:.3s;
+    border:2px solid transparent;
+}
+
+.price-card:hover{
+    transform:translateY(-10px);
+    border-color:#ff3c38;
+}
+
+.popular{
+    border:2px solid #ff3c38;
+}
+
+.popular-tag{
+    position:absolute;
+    top:-15px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#ff3c38;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.price-card h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.price-card h1{
+    color:#ff3c38;
+    font-size:48px;
+    margin-bottom:25px;
+}
+
+.price-card h1 span{
+    font-size:18px;
+    color:#bbb;
+}
+
+.price-card ul{
+    list-style:none;
+    margin-bottom:30px;
+}
+
+.price-card ul li{
+    margin:15px 0;
+    color:#ddd;
+}
+
+.plan-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#ff3c38;
+    color:#fff;
+    padding:12px 28px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.plan-btn:hover{
+    background:#d62828;
+}
+/* Paste at the END of style.css */
+
+.testimonials{
+    padding:90px 8%;
+    background:#101010;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.testimonial-card{
+    background:#222;
+    padding:35px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-10px);
+}
+
+.testimonial-card i{
+    font-size:40px;
+    color:#ff3c38;
+    margin-bottom:20px;
+}
+
+.testimonial-card p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+.testimonial-card h3{
+    margin:20px 0 10px;
+}
+
+.stars{
+    color:gold;
+    font-size:18px;
+}
+
+.contact{
+    padding:90px 8%;
+    background:#181818;
+}
+
+.contact-container{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact input,
+.contact textarea{
+    padding:16px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.footer{
+    background:#0a0a0a;
+    padding:50px 8%;
+    text-align:center;
+}
+
+.footer h2{
+    color:#ff3c38;
+    font-size:34px;
+}
+
+.footer p{
+    margin:15px 0;
+    color:#bbb;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin:25px 0;
+}
+
+.social-icons i{
+    font-size:24px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social-icons i:hover{
+    color:#ff3c38;
+    transform:scale(1.2);
+}
